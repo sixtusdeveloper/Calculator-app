@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap');
+
+
 *,
 *::before,
 *::after {
@@ -13,25 +16,51 @@ body {
   background: linear-gradient(
     to right,
     hsla(194, 95%, 15%, 0.826),
-    hsla(145, 86%, 28%, 0.713)
+    hsla(152, 75%, 42%, 0.507)
   );
+
+ 
+}
+
+h1{
+  text-align:center;
+  color: #ffffff;
+  font-family: "Playwrite US Trad", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2rem;
+  margin: 1rem auto;
+
+}
+
+h2{
+  text-align:center;
+  color: #ffffff;
+  font-family: "Playwrite US Trad", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1rem;
+  margin: 0 auto;
 }
 
 .overall-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 2rem auto;
   text-align: center;
   background: rgba(255, 255, 255, 0.75);
-  border: none;
-  border-radius: 10px;
-  width: 430px;
+  border: 1px solid rgb(30, 61, 61);
+  border-radius: 12px;
+  width: 410px;
   position: relative;
 }
 
 .calculator-grid {
   display: grid;
+  margin: 2px auto;
   justify-content: center;
   align-content: center;
   min-height: 100vh;
@@ -47,6 +76,7 @@ body {
   border-radius: 3px;
   outline: none;
   background-color: rgba(255, 255, 255, 0.75);
+  /* background-color:hsla(194, 95%, 15%, 0.826) */
 }
 
 .border-left-rounded {
@@ -64,26 +94,26 @@ body {
 
 .output {
   grid-column: 1 / -1;
-  background-color: aliceblue;
+  background-color: rgb(30, 61, 61);
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
   flex-direction: column;
   padding: 12px;
-  border: none;
-  border-top-right-radius: 8px !important;
-  border-top-left-radius: 8px !important;
+  border: 3px solid rgb(30, 61, 61);;
+  border-top-right-radius: 12px !important;
+  border-top-left-radius: 12px !important;
   word-wrap: break-word;
   word-break: break-all;
 }
 
 .output .previous-operand {
   /* color: rgba(255, 255, 255, 0.75); */
-  color: #333;
+  color: #ffffff;
   font-size: 1.5rem;
 }
 
 .output .current-operand {
-  color: #333;
+  color: #ffffff;
   font-size: 2.5rem;
 }
